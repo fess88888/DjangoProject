@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'catalog/home.html')
 
 
-def contact(request):
+def contacts(request):
     if request.method == 'POST':
         name = request.POST.get('name')
         message = request.POST.get('message')
