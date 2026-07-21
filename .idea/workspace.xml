@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="The Product and Category models have been created in the catalog application, and basic settings have been described for them.">
+    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="Созданы и применены миграции для новых моделей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784635188325</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Созданы и применены миграции для новых моделей">
+      <option name="closed" value="true" />
+      <created>1784636139108</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784636139108</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +125,7 @@
     <MESSAGE value="A new application called &#10;catalog has been created" />
     <MESSAGE value="A database has been created. Changes have been made to the connection settings in the settings.py file" />
     <MESSAGE value="The Product and Category models have been created in the catalog application, and basic settings have been described for them." />
-    <option name="LAST_COMMIT_MESSAGE" value="The Product and Category models have been created in the catalog application, and basic settings have been described for them." />
+    <MESSAGE value="Созданы и применены миграции для новых моделей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Созданы и применены миграции для новых моделей" />
   </component>
 </project>
