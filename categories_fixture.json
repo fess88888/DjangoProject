@@ -1,0 +1,26 @@
+[
+{
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+        "category_name": "Django-плагины",
+        "category_description": "Готовые компоненты для Django"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+        "category_name": "Bootstrap-компоненты",
+        "category_description": "UI-блоки на Bootstrap"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+        "category_name": "Утилиты и скрипты",
+        "category_description": "Автоматизация и скрипты"
+    }
+}
+]

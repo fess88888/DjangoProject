@@ -1,0 +1,106 @@
+[
+{
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+        "product_name": "Автогенерация slug из заголовка",
+        "product_description": "Сигнал + save()-логика для автоматической генерации slug.",
+        "picture": "images/placeholder.png",
+        "category": 1,
+        "price": "950.00",
+        "created_at": "2026-07-21T14:40:04.568Z",
+        "updated_at": "2026-07-21T14:40:04.568Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+        "product_name": "Массовая загрузка CSV через админку",
+        "product_description": "Форма в админке с валидацией строк и отчётом об ошибках.",
+        "picture": "images/placeholder.png",
+        "category": 1,
+        "price": "1800.00",
+        "created_at": "2026-07-21T14:40:40.250Z",
+        "updated_at": "2026-07-21T14:40:40.250Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+        "product_name": "Карточка товара с AJAX",
+        "product_description": "HTML/CSS/JS-блок + Django view для добавления в корзину без перезагрузки.",
+        "picture": "images/placeholder.png",
+        "category": 2,
+        "price": "750.00",
+        "created_at": "2026-07-21T14:41:27.822Z",
+        "updated_at": "2026-07-21T14:41:27.822Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+        "product_name": "Модальное окно с reCAPTCHA",
+        "product_description": "Готовое модальное окно на Bootstrap 5 и форма с reCAPTCHA.",
+        "picture": "images/placeholder.png",
+        "category": 2,
+        "price": "650.00",
+        "created_at": "2026-07-21T14:42:20.446Z",
+        "updated_at": "2026-07-21T14:42:20.446Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+        "product_name": "Слайдер отзывов с пагинацией",
+        "product_description": "Swiper.js-слайдер + Django-view с отдачей отзывов пачками по 5 штук.",
+        "picture": "images/placeholder.png",
+        "category": 2,
+        "price": "850.00",
+        "created_at": "2026-07-21T14:42:54.260Z",
+        "updated_at": "2026-07-21T14:42:54.260Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+        "product_name": "Парсер цен конкурентов",
+        "product_description": "Учебный парсер на BeautifulSoup с обработкой таймаутов и повторных попыток.",
+        "picture": "images/placeholder.png",
+        "category": 3,
+        "price": "1100.00",
+        "created_at": "2026-07-21T14:43:42.517Z",
+        "updated_at": "2026-07-21T14:43:42.517Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+        "product_name": "Экспорт каталога в JSON",
+        "product_description": "Консольный скрипт для экспорта с группировкой по категориям (как в задании).",
+        "picture": "images/placeholder.png",
+        "category": 3,
+        "price": "900.00",
+        "created_at": "2026-07-21T14:44:15.981Z",
+        "updated_at": "2026-07-21T14:44:15.981Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+        "product_name": "Очистка тестовых данных",
+        "product_description": "Утилита для TRUNCATE таблиц и сброса автоинкрементов (для CI/CD).",
+        "picture": "images/placeholder.png",
+        "category": 3,
+        "price": "500.00",
+        "created_at": "2026-07-21T14:45:05.293Z",
+        "updated_at": "2026-07-21T14:45:05.293Z"
+    }
+}
+]
