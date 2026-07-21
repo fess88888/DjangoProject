@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="Созданы и применены миграции для новых моделей">
+    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="Products and categories are displayed in the admin panel.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__23&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fess8/PycharmProjects/ProjectHomework_6&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__23",
+    "last_opened_file_path": "C:/Users/fess8/PycharmProjects/DjangoProject/screenshot"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fess8\PycharmProjects\DjangoProject\screenshot" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -107,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784636139108</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Products and categories are displayed in the admin panel.">
+      <option name="closed" value="true" />
+      <created>1784638926619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784638926619</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +139,7 @@
     <MESSAGE value="A database has been created. Changes have been made to the connection settings in the settings.py file" />
     <MESSAGE value="The Product and Category models have been created in the catalog application, and basic settings have been described for them." />
     <MESSAGE value="Созданы и применены миграции для новых моделей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Созданы и применены миграции для новых моделей" />
+    <MESSAGE value="Products and categories are displayed in the admin panel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Products and categories are displayed in the admin panel." />
   </component>
 </project>
