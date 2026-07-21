@@ -31,3 +31,17 @@ class Product(models.Model):
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
         ordering = ['product_name',]
+
+class Contact(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Имя')
+    position = models.CharField(max_length=100, blank=True, verbose_name='Должность')
+    phone = models.CharField(max_length=50, blank=True, verbose_name='Телефон')
+    email = models.EmailField(blank=True, verbose_name='Email')
+    address = models.TextField(blank=True, verbose_name='Адрес')
+
+    def __str__(self):
+        return f"{self.name} ({self.position})"
+
+    class Meta:
+        verbose_name = 'контакт'
+        verbose_name_plural = 'контакты'
