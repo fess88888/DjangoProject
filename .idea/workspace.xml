@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="A new application called &#10;catalog has been created">
+    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="A custom command has been created to add test products. Additional task completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -36,12 +35,12 @@
     &quot;assignee&quot;: &quot;fess88888&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/fess88888/DjangoProject.git",
-    "accountId": "d92b00c8-d485-47f7-9d04-640707ab9ce4"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fess88888/DjangoProject.git&quot;,
+    &quot;accountId&quot;: &quot;d92b00c8-d485-47f7-9d04-640707ab9ce4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -55,10 +54,15 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__22",
-    "last_opened_file_path": "C:/Users/fess8/PycharmProjects/ProjectHomework_6"
+    "git-widget-placeholder": "feature/homework__23",
+    "last_opened_file_path": "C:/Users/fess8/PycharmProjects/DjangoProject/screenshot"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fess8\PycharmProjects\DjangoProject\screenshot" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +87,71 @@
       <option name="project" value="LOCAL" />
       <updated>1784201467392</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A database has been created. Changes have been made to the connection settings in the settings.py file">
+      <option name="closed" value="true" />
+      <created>1784403870069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784403870069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="The Product and Category models have been created in the catalog application, and basic settings have been described for them.">
+      <option name="closed" value="true" />
+      <created>1784635188325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784635188325</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Созданы и применены миграции для новых моделей">
+      <option name="closed" value="true" />
+      <created>1784636139108</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784636139108</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Products and categories are displayed in the admin panel.">
+      <option name="closed" value="true" />
+      <created>1784638926619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784638926619</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added screenshots of work through the shell tool">
+      <option name="closed" value="true" />
+      <created>1784649171477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784649171477</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create fixtures for the Category and Product models.">
+      <option name="closed" value="true" />
+      <created>1784650921581</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1784650921581</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create fixtures for the Category and Product models.">
+      <option name="closed" value="true" />
+      <created>1784655673113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784655673113</updated>
+    </task>
+    <task id="LOCAL-00009" summary="A custom command has been created to add test products. Additional task completed">
+      <option name="closed" value="true" />
+      <created>1784657355277</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1784657355277</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,17 +167,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A new application called &#10;catalog has been created" />
-    <option name="LAST_COMMIT_MESSAGE" value="A new application called &#10;catalog has been created" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/config/urls.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="A database has been created. Changes have been made to the connection settings in the settings.py file" />
+    <MESSAGE value="The Product and Category models have been created in the catalog application, and basic settings have been described for them." />
+    <MESSAGE value="Созданы и применены миграции для новых моделей" />
+    <MESSAGE value="Products and categories are displayed in the admin panel." />
+    <MESSAGE value="added screenshots of work through the shell tool" />
+    <MESSAGE value="Create fixtures for the Category and Product models." />
+    <MESSAGE value="A custom command has been created to add test products. Additional task completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="A custom command has been created to add test products. Additional task completed" />
   </component>
 </project>
