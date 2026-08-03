@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="Select the general (basic) template" />
+    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="add changes in README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785793040247</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add changes in README.md">
+      <option name="closed" value="true" />
+      <created>1785793445199</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1785793445199</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +206,7 @@
     <MESSAGE value="A new controller and template have been created to display a page with detailed product information." />
     <MESSAGE value="Code for displaying a list of products using a loop has been added to the main page template." />
     <MESSAGE value="Select the general (basic) template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select the general (basic) template" />
+    <MESSAGE value="add changes in README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes in README.md" />
   </component>
 </project>
