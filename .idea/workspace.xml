@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="A custom command has been created to add test products. Additional task completed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="Select the general (basic) template" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +148,31 @@
       <option name="project" value="LOCAL" />
       <updated>1784657355277</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="A new controller and template have been created to display a page with detailed product information.">
+      <option name="closed" value="true" />
+      <created>1785792853805</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1785792853805</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Code for displaying a list of products using a loop has been added to the main page template.">
+      <option name="closed" value="true" />
+      <created>1785792961608</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1785792961608</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Select the general (basic) template">
+      <option name="closed" value="true" />
+      <created>1785793040247</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1785793040247</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +195,9 @@
     <MESSAGE value="added screenshots of work through the shell tool" />
     <MESSAGE value="Create fixtures for the Category and Product models." />
     <MESSAGE value="A custom command has been created to add test products. Additional task completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="A custom command has been created to add test products. Additional task completed" />
+    <MESSAGE value="A new controller and template have been created to display a page with detailed product information." />
+    <MESSAGE value="Code for displaying a list of products using a loop has been added to the main page template." />
+    <MESSAGE value="Select the general (basic) template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select the general (basic) template" />
   </component>
 </project>
