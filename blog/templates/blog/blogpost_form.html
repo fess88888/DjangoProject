@@ -1,0 +1,45 @@
+{% extends 'catalog/base.html' %}
+{% load static %}
+
+{% block title %}Создать пост{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Создать пост</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form.non_field_errors }}
+
+        <div class="mb-3">
+            {{ form.title.label_tag }}<br>
+            {{ form.title }}
+            {{ form.title.errors }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.content.label_tag }}<br>
+            {{ form.content }}
+            {{ form.content.errors }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.preview.label_tag }}<br>
+            {{ form.preview }}
+            {% if form.preview.value %}
+                <p class="small text-muted">Текущее превью: <a href="{{ form.preview.value.url }}" target="_blank">открыть</a></p>
+            {% endif %}
+            {{ form.preview.errors }}
+        </div>
+
+        <div class="mb-3 form-check">
+            {{ form.is_published }} {{ form.is_published.label_tag }}
+            {{ form.is_published.errors }}
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Сохранить</button>
+        <a href="{% url 'blog:post_list' %}" class="btn btn-outline-secondary btn-lg ms-2">Отмена</a>
+    </form>
+</div>
+{% endblock %}

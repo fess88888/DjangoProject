@@ -29,7 +29,7 @@
                     <ul class="list-unstyled mt-3 mb-4 text-start">
                         <li>Описание: {{ product.product_description }}</li>
                     </ul>
-                    <a href="{% url 'catalog:products_detail' product_id=product.id %}" class="btn btn-lg btn-outline-primary w-100">Купить</a>
+                    <a href="{% url 'catalog:product_detail' pk=product.pk %}" class="btn btn-lg btn-outline-primary w-100">Купить</a>
                     <a href="{% url 'catalog:home' %}" class="btn btn-lg btn-outline-primary w-100">В каталог</a>
                 </div>
             </div>
