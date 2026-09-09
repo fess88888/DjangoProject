@@ -6,6 +6,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView,
 )
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from .models import Product
 
@@ -20,6 +21,16 @@ class HomeListView(ListView):
 class ContactsView(TemplateView):
     """Страница контактов."""
     template_name = "catalog/contacts.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)
+
+    def post(self, request, *args, **kwargs):
+        # здесь логика обработки формы
+        name = request.POST.get("name")
+        message = request.POST.get("message")
+        # отправка письма, сохранение в БД и т. д.
+        return redirect("catalog:contacts")
 
 
 class ProductDetailView(DetailView):
