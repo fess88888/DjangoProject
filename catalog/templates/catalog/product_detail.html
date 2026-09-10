@@ -4,11 +4,9 @@
 
 {% block content %}
 <div class="container py-5">
-    <!-- Карточка товара на всю ширину -->
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
             <div class="card box-shadow shadow-sm border-0">
-                <!-- Картинка на всю ширину карточки -->
                 {% if product.picture %}
                     <img src="{{ product.picture.url }}" class="card-img-top" alt="{{ product.product_name }}" style="height: 300px; object-fit: cover;">
                 {% else %}
@@ -23,14 +21,29 @@
 
                 <div class="card-body">
                     <h3 class="card-title pricing-card-title fw-bold">Цена: {{ product.price|floatformat:0 }} RUB</h3>
-
                     <h5 class="card-title text-secondary">Категория: {{ product.category }}</h5>
 
                     <ul class="list-unstyled mt-3 mb-4 text-start">
                         <li>Описание: {{ product.product_description }}</li>
                     </ul>
-                    <a href="{% url 'catalog:product_detail' pk=product.pk %}" class="btn btn-lg btn-outline-primary w-100">Купить</a>
-                    <a href="{% url 'catalog:home' %}" class="btn btn-lg btn-outline-primary w-100">В каталог</a>
+
+                    <!-- Кнопки действий -->
+                    <div class="d-flex gap-2 mb-3">
+                        <!-- Кнопка редактирования -->
+                        <a href="{% url 'catalog:product_update' pk=product.pk %}" class="btn btn-warning btn-sm">
+                            ✏️ Редактировать
+                        </a>
+
+                        <!-- Кнопка удаления -->
+                        <a href="{% url 'catalog:product_delete' pk=product.pk %}" class="btn btn-danger btn-sm">
+                            🗑️ Удалить
+                        </a>
+                    </div>
+
+                    <!-- Основные кнопки -->
+                    <a href="{% url 'catalog:home' %}" class="btn btn-outline-primary w-100">
+                        В каталог
+                    </a>
                 </div>
             </div>
         </div>
