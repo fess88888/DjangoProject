@@ -1,26 +1,45 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
+
 {% block content %}
-<div class="container">
+<div class="container py-5">
+    <div class="d-flex justify-content-end mb-4">
+        <a href="{% url 'catalog:product_create' %}" class="btn btn-primary btn-lg">
+            + Добавить товар
+        </a>
+    </div>
+
     <div class="row text-center">
         {% for product in products %}
         <div class="col-3">
             <div class="card mb-4 box-shadow">
-                <img src="{{ product.picture.url }}">
+                <!-- Безопасный вывод картинки -->
+                {% if product.picture and product.picture.name %}
+                    <img src="{{ product.picture.url }}" class="card-img-top" alt="{{ product.product_name }}" style="height: 200px; object-fit: cover;">
+                {% else %}
+                    <div class="bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <span class="text-muted">Нет фото</span>
+                    </div>
+                {% endif %}
+
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">{{product.product_name}}</h4>
+                    <h4 class="my-0 font-weight-normal">{{ product.product_name }}</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title">RUB {{product.price|floatformat:0}}</h1>
-                    <h5 class="card-title pricing-card-title">Категория: {{product.category}}</h5>
+                    <h1 class="card-title pricing-card-title">RUB {{ product.price|floatformat:0 }}</h1>
+                    <h5 class="card-title pricing-card-title">Категория: {{ product.category }}</h5>
                     <ul class="list-unstyled mt-3 mb-4 text-start m-3">
-                        <li>Описание: {{product.product_description|truncatechars:100}}</li>
+                        <li>Описание: {{ product.product_description|truncatechars:100 }}</li>
                     </ul>
                     <a href="{% url 'catalog:product_detail' pk=product.pk %}" class="btn btn-lg btn-outline-primary">Подробно</a>
                 </div>
             </div>
         </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <p class="lead">Пока нет товаров. Добавьте первый!</p>
+        </div>
         {% endfor %}
     </div>
-  </div>
+</div>
 {% endblock %}

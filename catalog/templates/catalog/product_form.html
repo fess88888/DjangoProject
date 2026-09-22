@@ -1,0 +1,39 @@
+{% extends 'catalog/base.html' %}
+
+{% block title %}{{ form.instance.pk|yesno:"Редактирование,Создание" }} продукта{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">
+        {{ form.instance.pk|yesno:"Редактировать продукт,Создать продукт" }}
+    </h2>
+
+    <form method="post" enctype="multipart/form-data" novalidate>
+        {% csrf_token %}
+
+        {% for field in form %}
+            <div class="mb-3">
+                <!-- Используем label_tag — самый надёжный способ -->
+                {{ field.label_tag }}
+
+                {{ field }}
+
+                {% if field.errors %}
+                    <div class="text-danger small mt-1">
+                        {{ field.errors }}
+                    </div>
+                {% endif %}
+
+                {% if field.help_text %}
+                    <div class="form-text">{{ field.help_text }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <button type="submit" class="btn btn-primary btn-lg">Сохранить</button>
+        <a href="{% url 'catalog:home' %}" class="btn btn-outline-secondary btn-lg ms-2">
+            Отмена
+        </a>
+    </form>
+</div>
+{% endblock %}
