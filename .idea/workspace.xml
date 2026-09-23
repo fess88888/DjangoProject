@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2d1c7e1-7ece-4d14-a7f7-db96c0c76474" name="Changes" comment="changes in settings.py, urls.py in config and views.py in catalog">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +41,24 @@
     &quot;author&quot;: &quot;fess88888&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState">{
-  &quot;prStates&quot;: [
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDOTVVrR876bvwh&quot;,
-        &quot;number&quot;: 3
+      "id": {
+        "id": "PR_kwDOTVVrR876bvwh",
+        "number": 3
       },
-      &quot;lastSeen&quot;: 1785929662793
+      "lastSeen": 1785929662793
+    },
+    {
+      "id": {
+        "id": "PR_kwDOTVVrR88AAAABEkWJVg",
+        "number": 6
+      },
+      "lastSeen": 1790176795000
     }
   ]
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/fess88888/DjangoProject.git&quot;,
@@ -80,7 +88,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__27",
+    "git-widget-placeholder": "feature/homework__28",
     "last_opened_file_path": "C:/Users/fess8/PycharmProjects/Coursework_1"
   }
 }]]></component>
