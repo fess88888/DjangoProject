@@ -1,8 +1,11 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from .managers import UserManager
 
 
 class User(AbstractUser):
+    objects = UserManager()
+
     username = None
     email = models.EmailField(unique=True, verbose_name="Почта")
     avatar = models.ImageField(upload_to="users_avatars/", blank=True, null=True, verbose_name="Аватар")

@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models import SET_NULL
+from django.contrib.auth.models import AbstractUser
 
 
 class Category(models.Model):
@@ -23,6 +24,16 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата последнего изменения')
+    is_published = models.BooleanField(default=False, verbose_name='Опубликован')
+
+    owner = models.ForeignKey(
+        'users.User',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='products',
+        verbose_name='Владелец',
+    )
 
     def __str__(self):
         return self.product_name
@@ -31,6 +42,9 @@ class Product(models.Model):
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
         ordering = ['product_name',]
+        permissions = [
+            ('can_unpublish_product', 'Может отменить публикацию продукта'),
+        ]
 
 class Contact(models.Model):
     name = models.CharField(max_length=100, verbose_name='Имя')
