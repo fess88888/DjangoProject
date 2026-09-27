@@ -13,7 +13,9 @@ from django.urls import reverse_lazy
 from .forms import ProductForm
 from .models import Product
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.decorators.http import require_POST
+
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 
 
 def unpublish_product(request, pk):
@@ -45,6 +47,7 @@ class ContactsView(TemplateView):
         return redirect("catalog:contacts")
 
 
+@method_decorator(cache_page(60 * 15), name='dispatch')
 class ProductDetailView(DetailView):
     model = Product
     template_name = "catalog/product_detail.html"
