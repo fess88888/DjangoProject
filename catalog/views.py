@@ -11,9 +11,11 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
 
 from .forms import ProductForm
-from .models import Product
+from .models import Product, Category
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.decorators.http import require_POST
+
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 
 
 def unpublish_product(request, pk):
@@ -45,6 +47,7 @@ class ContactsView(TemplateView):
         return redirect("catalog:contacts")
 
 
+@method_decorator(cache_page(60 * 15), name='dispatch')
 class ProductDetailView(DetailView):
     model = Product
     template_name = "catalog/product_detail.html"
@@ -86,3 +89,22 @@ class ProductDeleteView(LoginRequiredMixin, DeleteView):
         if user.has_perm('catalog.delete_product'):
             return Product.objects.all()
         return Product.objects.filter(owner=user)
+
+from django.views.generic import ListView
+from .services import get_products_by_category
+
+
+class CategoryProductsView(ListView):
+    model = Product
+    template_name = 'catalog/products_list.html'
+    context_object_name = 'products'
+
+    def get_queryset(self):
+        category_pk = self.kwargs.get('pk')
+        return Product.objects.filter(category_id=category_pk)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['current_category'] = Category.objects.get(pk=self.kwargs.get('pk'))
+        return context
+
